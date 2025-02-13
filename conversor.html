@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <a href="index.html" class="link">
+            <img src="./img/home.png" class="icon">
+        </a>
+        <a href="sobre.html" class="link">
+            <img src="./img/sobre.png" class="icon">
+        <a href="port.html" class="link">
+            <img src="./img/menu.png" class="icon">
+        </a>
+        <a href="contato.html" class="link">
+            <img src="./img/contato.png" class="icon">
+        </a>
+    </div>
+    <div class="ordem">
+        <div class="calculadora">
+            <h2>Conversão de Unidades</h2>
+            <div class="inputs">
+                <label for="valor">Digite o valor:</label>
+                <input type="number" id="valor" placeholder="Valor a converter" required>
+            </div>
+            <div class="inputs">
+                <select id="unidade">
+                    <option value="celsius-fahrenheit">Celsius para Fahrenheit</option>
+                    <option value="metros-centimetros">Metros para Centímetros</option>
+                    <option value="quilos-libras">Quilos para Libras</option>
+                </select>
+            </div>
+            <div class="botoes">
+                <button onclick="converter()">Converter</button>
+            </div>
+            <div id="resultado"></div>
+        </div>
+    </div>
+
+    <script src="./js/conversor.js"></script>
+</body>
+</html>

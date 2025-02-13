@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo de Adivinhação</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="top-bar">
+      <a href="index.html" class="link">
+          <img src="./img/home.png" class="icon">
+      </a>
+      <a href="sobre.html" class="link">
+          <img src="./img/sobre.png" class="icon">
+      <a href="port.html" class="link">
+          <img src="./img/menu.png" class="icon">
+      </a>
+      <a href="contato.html" class="link">
+          <img src="./img/contato.png" class="icon">
+      </a>
+  </div>
+  <div class="ordem">
+    <div class="calculadora">
+      <h2>Digite um número entre 1 e 100</h2>
+      <div class="inputs">
+        <input type="number" id="userInput" min="1" max="100" placeholder="Digite seu palpite">
+        <button class="botoes" onclick="verificar()">Tentar</button>
+      </div>
+      <div id="resultado"></div>
+      <div id="dica"></div>
+    </div>
+  </div>
+
+  <script src="./js/jogo.js"></script>
+</body>
+</html>

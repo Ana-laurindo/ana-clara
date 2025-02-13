@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <a href="index.html" class="link">
+            <img src="./img/home.png" class="icon">
+        </a>
+        <a href="sobre.html" class="link">
+            <img src="./img/sobre.png" class="icon">
+        <a href="port.html" class="link">
+            <img src="./img/menu.png" class="icon">
+        </a>
+        <a href="contato.html" class="link">
+            <img src="./img/contato.png" class="icon">
+        </a>
+    </div>
+
+    <div class="ordem">
+    <div class="calculadora">
+        <h2>Calculadora Simples</h2>
+
+        <div class="inputs">
+            <input type="number" id="numero1" placeholder="Número 1" required>
+            <input type="number" id="numero2" placeholder="Número 2" required>
+        </div>
+
+        <div class="botoes">
+            <button onclick="calcular('+')">Somar</button>
+            <button onclick="calcular('-')">Subtrair</button>
+            <button onclick="calcular('*')">Multiplicar</button>
+            <button onclick="calcular('/')">Dividir</button>
+        </div>
+
+        <div id="resultado"></div>
+    </div>
+    </div>
+    <script src="./js/calculadora.js"></script>
+</body>
+</html>
